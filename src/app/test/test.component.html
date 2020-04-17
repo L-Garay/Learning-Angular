@@ -1,0 +1,74 @@
+<p>Hello {{ name + " " + lastName }}</p>
+<h5>{{ 2 + 2 }}</h5>
+<h5>{{ saySomething() }}</h5>
+<h5>You are on {{ siteUrl }}</h5>
+<h5 [id]="testId">
+  The id of this element will be 123456; see inspect tool.
+</h5>
+<h5 [class]="successClass">Success</h5>
+<h5 [class]="warningClass">Warning</h5>
+<h5 [class]="dangerClass">Danger</h5>
+<h5 [class.danger]="hasError">
+  This will apply the class .danger if the varaible hasError evaluates to true.
+</h5>
+<h5 [ngClass]="messageClasses">
+  This will have multiple classes applied, based on the object messageClasses
+  and its properties that evaluate to true.
+</h5>
+<h5 [style.color]="styleBindColor">Example of style binding</h5>
+<h5 [ngStyle]="multipleStyles">Style binding multiple styles.</h5>
+<button (click)="sayHello()">Say Hello</button>
+<button (click)="hello = 'This is a different hello'">Say Hello</button>
+<h3>{{ hello }}</h3>
+<input #ageInput type="text" />
+<button (click)="displayAge(ageInput.value)">Display Age</button>
+<h5>{{ age }}</h5>
+<input [(ngModel)]="fullName" type="text" />
+<h5>{{ fullName }}</h5>
+<h5 *ngIf="showElement; else elseBlock">
+  This will conditionally render based on evaluation of a variable.
+</h5>
+<ng-template #elseBlock>
+  <h5>
+    This will render if showElement variable is false, using an else
+    conditional.
+  </h5></ng-template
+>
+<div [ngSwitch]="switch">
+  <div *ngSwitchCase="'one'">The value is 'one'</div>
+  <div *ngSwitchCase="'two'">The value is 'two'</div>
+  <div *ngSwitchCase="'three'">The value is 'three'</div>
+  <div *ngSwitchDefault>The value does not match.</div>
+</div>
+
+<div>
+  <h4>This will render an element below for each item in collection.</h4>
+  <div *ngFor="let color of colors; index as i; first as f">
+    <h5>{{ i + 1 }} {{ f }} {{ color }}</h5>
+  </div>
+</div>
+
+<div>This name comes from the parent component: {{ parentFullName }}</div>
+<button (click)="fireEvent()">Will send event to parent component</button>
+
+<h5>{{ pipeExample | lowercase }}</h5>
+<h5>{{ pipeExample | uppercase }}</h5>
+<h5>{{ pipeExample | titlecase }}</h5>
+<h5>{{ pipeExample | slice: 10 }}</h5>
+<h5>{{ pipeExample | slice: 10:20 }}</h5>
+<h5>{{ pipeObject | json }}</h5>
+
+<h5>{{ 12.12345 | number: "2.5-6" }}</h5>
+<h5>{{ 12.12345 | number: "3.6-7" }}</h5>
+<h5>{{ 12.12345 | number: "2.1-2" }}</h5>
+
+<h5>{{ 0.3 | percent }}</h5>
+<h5>{{ 12.75 | currency }}</h5>
+<h5>{{ 15.55 | currency: "GBP":"code" }}</h5>
+
+<h5>{{ date }}</h5>
+<h5>{{ date | date: "short" }}</h5>
+<h5>{{ date | date: "shortDate" }}</h5>
+<h5>{{ date | date: "shortTime" }}</h5>
+<h5>{{ date | date: "longDate" }}</h5>
+<h5>{{ date | date: "longTime" }}</h5>

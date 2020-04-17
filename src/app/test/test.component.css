@@ -1,0 +1,17 @@
+p {
+  color: red;
+  border-bottom: 3pt solid blue;
+}
+
+.success {
+  color: green;
+}
+.warning {
+  color: yellow;
+}
+.danger {
+  color: red;
+}
+.italic {
+  font-style: italic;
+}
