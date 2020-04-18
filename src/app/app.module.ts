@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TestComponent } from './test/test.component';
 import { ServicesHttpComponent } from './services-http/services-http.component';
@@ -16,6 +16,7 @@ import { HttpClientModule } from '@angular/common/http';
     TestComponent,
     ServicesHttpComponent,
     ServicesHttpSecondComponent,
+    routingComponents,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [TestServiceService],

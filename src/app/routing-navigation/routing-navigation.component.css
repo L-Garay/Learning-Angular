@@ -1,0 +1,7 @@
+.departmentLink:hover {
+  cursor: pointer;
+}
+.selected {
+  color: red;
+  font-style: italic;
+}

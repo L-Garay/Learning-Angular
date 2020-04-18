@@ -1,0 +1,10 @@
+<h5>List of departments</h5>
+<div *ngFor="let department of departments">
+  <p
+    (click)="onSelect(department)"
+    [class.selected]="isSelected(department)"
+    class="departmentLink"
+  >
+    {{ department.name }}, Id: {{ department.id }}
+  </p>
+</div>

@@ -213,13 +213,16 @@
         [parentData]="name"
         (childEvent)="childMessage = $event"
       ></app-test> -->
-      <app-services-http></app-services-http>
-      <app-services-http-second></app-services-http-second>
+      <!-- <app-services-http></app-services-http>
+      <app-services-http-second></app-services-http-second> -->
     </h1>
   </div>
   <h5>{{ childMessage }}</h5>
   <!-- Footer -->
-  <footer></footer>
+  <nav>
+    <a routerLink="/routeOne" routerLinkActive="active">Route One</a>
+    <a routerLink="/routeTwo" routerLinkActive="active">Route Two</a>
+  </nav>
 </div>
 
 <router-outlet></router-outlet>

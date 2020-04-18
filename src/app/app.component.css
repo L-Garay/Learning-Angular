@@ -1,0 +1,13 @@
+nav a {
+  color: blue;
+  background-color: burlywood;
+}
+nav a:hover {
+  color: red;
+  background-color: white;
+  cursor: pointer;
+}
+nav a.active {
+  color: red;
+  background-color: aqua;
+}
