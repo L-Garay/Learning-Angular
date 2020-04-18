@@ -1,0 +1,8 @@
+<h4>This is the second component where we will utilize services</h4>
+<h5>Detailed Employee List</h5>
+<ul *ngFor="let employee of employees">
+  <li>
+    Id: {{ employee.id }}, Name: {{ employee.name }}, Age: {{ employee.age }}
+  </li>
+</ul>
+<p>This will be the error message: {{ errorMsg }}</p>

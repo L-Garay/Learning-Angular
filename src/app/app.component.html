@@ -209,10 +209,12 @@
   </div>
   <div>
     <h1>
-      <app-test
+      <!-- <app-test
         [parentData]="name"
         (childEvent)="childMessage = $event"
-      ></app-test>
+      ></app-test> -->
+      <app-services-http></app-services-http>
+      <app-services-http-second></app-services-http-second>
     </h1>
   </div>
   <h5>{{ childMessage }}</h5>

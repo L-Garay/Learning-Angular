@@ -7,9 +7,9 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class TestComponent implements OnInit {
   public name: string = 'Logan';
-  private lastName: string = 'Garay';
+  public lastName: string = 'Garay';
   public siteUrl: string = window.location.href;
-  private testId: string = '123456';
+  public testId: string = '123456';
   public successClass: string = 'success';
   public warningClass: string = 'warning';
   public dangerClass = 'danger';
