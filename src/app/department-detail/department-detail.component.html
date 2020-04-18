@@ -3,6 +3,10 @@
 <a (click)="goNext()">Next</a>
 <a (click)="goPrevious()">Previous</a>
 
-<div> 
+<div>
   <button (click)="goBack()">Go Back to departments</button>
 </div>
+
+<button (click)="showOverview()">Overview</button>
+<button (click)="showContact()">Contact</button>
+<router-outlet></router-outlet>

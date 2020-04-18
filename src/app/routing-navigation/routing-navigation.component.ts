@@ -24,7 +24,10 @@ export class RoutingNavigationComponent implements OnInit {
   }
 
   onSelect(department) {
-    this.router.navigate(['/routeOne', department.id]);
+    this.router.navigate(['/routeOne', department.id]); /* absolute navigation*/
+    // this.router.navigate([department.id], {
+    //   relativeTo: this.route,
+    // }); /* relative navigation*/
   }
   // optional parameter styling
   isSelected(department) {
