@@ -9,8 +9,6 @@ import { ServicesHttpComponent } from './services-http/services-http.component';
 import { ServicesHttpSecondComponent } from './services-http-second/services-http-second.component';
 import { TestServiceService } from './test-service.service';
 import { HttpClientModule } from '@angular/common/http';
-import { DepartmentOverviewComponent } from './department-overview/department-overview.component';
-import { DepartmentContactComponent } from './department-contact/department-contact.component';
 
 @NgModule({
   declarations: [
@@ -19,8 +17,6 @@ import { DepartmentContactComponent } from './department-contact/department-cont
     ServicesHttpComponent,
     ServicesHttpSecondComponent,
     routingComponents,
-    DepartmentOverviewComponent,
-    DepartmentContactComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [TestServiceService],
